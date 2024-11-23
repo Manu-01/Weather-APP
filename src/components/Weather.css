@@ -73,3 +73,94 @@
     width: 26px;
     margin-top: 10px;
 }
+
+/* Default styles for larger screens (desktop) are already defined */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+    .weather {
+        padding: 30px;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .location {
+        font-size: 30px;
+    }
+
+    .weather-icon {
+        width: 120px;
+    }
+
+    .weather-data {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .weather-data .col {
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .weather-data .col span {
+        font-size: 14px;
+    }
+
+    .weather-data .col img {
+        width: 22px;
+    }
+
+    .search-bar input {
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .search-bar img {
+        width: 40px;
+        padding: 10px;
+    }
+}
+
+/* For mobile phones (480px and below) */
+@media (max-width: 480px) {
+    .weather {
+        padding: 20px;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .location {
+        font-size: 24px;
+    }
+
+    .weather-icon {
+        width: 100px;
+    }
+
+    .weather-data {
+        gap: 10px;
+    }
+
+    .weather-data .col {
+        font-size: 16px;
+    }
+
+    .weather-data .col span {
+        font-size: 12px;
+    }
+
+    .search-bar input {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .search-bar img {
+        width: 30px;
+        padding: 8px;
+    }
+}
